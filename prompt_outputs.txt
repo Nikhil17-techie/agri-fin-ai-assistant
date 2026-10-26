@@ -1,0 +1,204 @@
+# Prompt Engineering Experiment Outputs
+
+Project: AI Smart Agriculture & Finance Assistant
+
+Model: gemini-3.8-flash
+
+Date: 2026-10-11 11:49:55
+
+## Experiment Question
+
+My tomato plants have yellow leaves and slow growth. What could be the reasons, and what should I do first?
+
+---
+
+## ZERO-SHOT PROMPTING
+
+### Prompt Used
+
+My tomato plants have yellow leaves and slow growth. What could be the reasons, and what should I do first?
+
+### Actual Model Output
+
+Yellow leaves paired with slow growth in tomatoes usually point to a few very common culprits. Before you add fertilizer or chemicals, it is important to diagnose the exact cause, as treating the wrong issue can make the problem worse.
+
+Here is **what to do first**, followed by the **most likely reasons**.
+
+---
+
+### What to Do First: The 3-Step Check
+
+1. **Check the Soil Moisture (The Finger Test):**
+   * Stick your finger about 2 inches (5 cm) deep into the soil. 
+   * **Soggy/wet?** You are likely overwatering, or the soil has poor drainage.
+   * **Bone dry?** The plant is underwatered.
+   * *Rule of thumb:* Water only when the top 1–2 inches feel dry to the touch.
+
+2. **Inspect WHERE the Yellowing Is Happening:**
+   * **Bottom (older) leaves first:** Most commonly **overwatering** or a **Nitrogen deficiency**.
+   * **Top (newer) leaves first:** Often a **micronutrient deficiency** (like Iron) or soil pH lockout.
+   * **Yellow with brown/black spots:** Likely a **fungal disease** (e.g., early blight).
+
+3. **Check Temperatures:**
+   * Have nighttime temperatures dropped below **50°F (10°C)**? Cold nights will stall tomato growth completely and cause leaves to turn pale yellow or slightly purple.
+
+---
+
+### The Most Likely Reasons
+
+#### 1. Overwatering or Poor Drainage (Most Common)
+When roots are kept constantly wet, they cannot absorb oxygen (they "drown"). This suffocates the plant, making it unable to take up nutrients even if they are present in the soil.
+* **Signs:** Entire lower leaves turn pale yellow; soil stays wet for days; stems may feel soft.
+
+#### 2. Nitrogen Deficiency
+Nitrogen is the primary nutrient responsible for leafy green growth. Without enough of it, the plant steals nitrogen from older leaves to support new growth, causing the bottom leaves to yellow while growth stalls.
+* **Signs:** Lower leaves turn uniformly pale green, then yellow, while veins remain faintly green; overall plant looks stunted and thin.
+
+#### 3. Cold Shock / Insufficient Sunlight
+Tomatoes are warm-season, high-energy plants that need at least **6 to 8 hours of direct sun daily**.
+* **Signs:** Cold or shaded tomatoes stop growing entirely (growth "hibernation"), and leaves lose their deep green color due to sluggish photosynthesis.
+
+#### 4. The Plant is Root-Bound (If in a Container)
+If your tomato is in a pot that is too small (under 5 gallons) or has been in a nursery starter pot too long, the roots will circle tightly and choke themselves.
+* **Signs:** Roots poking out the bottom drainage holes; water drains straight through without holding moisture.
+
+#### 5. Soil pH Imbalance (Nutrient Lockout)
+Tomatoes prefer a slightly acidic pH between **6.2 and 6.8**. If your soil is too acidic or too alkaline, the plant enters "lockout"—the nutrients are in the soil, but the roots cannot absorb them.
+
+---
+
+### Recommended Action Plan
+
+1. **Adjust Watering Immediately:** If the soil is wet, hold off on watering completely until the top 2 inches dry out. Ensure pots have functional drainage holes.
+2. **Prune Lower Yellow Leaves:** Snip off completely yellow or dying lower leaves with clean shears. This prevents soil-borne fungi from splashing onto them and stops the plant from wasting energy on dying foliage.
+3. **Feed Moderately (If soil moisture is correct):** If the soil has good moisture and drainage, apply a **balanced liquid tomato fertilizer** (or fish emulsion) at half-strength. Liquid feeds are absorbed quickly and will kick-start growth within a week if lack of nutrients was the issue.
+4. **Ensure Warmth & Light:** Move potted plants into the sunniest available spot, or shield in-ground plants with row covers if cold nights are still occurring.
+
+---
+
+## ROLE-BASED PROMPTING
+
+### Prompt Used
+
+Act as an agricultural extension assistant who provides practical guidance to farmers.
+
+Question: My tomato plants have yellow leaves and slow growth. What could be the reasons, and what should I do first?
+
+Explain possible reasons for the problem and suggest practical first steps. Use simple language.
+
+### Actual Model Output
+
+Hello! I understand your concern. Yellow leaves and slow growth are very common problems in tomato farming, but the good news is that if we catch the cause early, the plants can usually recover. 
+
+Here is a simple guide to help you figure out what is happening and what to do first.
+
+---
+
+### Step 1: What You Should Do First (The "Check-Up")
+
+Before buying any spray or fertilizer, walk into your field or garden and check these three things today:
+
+1. **Check the soil moisture:** Dig your finger 2 to 3 inches deep near the plant (be careful not to hurt the roots). 
+   * Is the soil soggy and muddy? 
+   * Or is it dry and hard as a rock?
+2. **Look at *where* the yellow is:** 
+   * Are the **bottom (older) leaves** yellow, while the top leaves are still light green? 
+   * Or are the **top (new) leaves** yellow?
+3. **Inspect under the leaves:** Turn a few yellow leaves over. Look closely for tiny insects (like whiteflies, aphids, or spider mites) or dark brown spots with yellow rings.
+
+---
+
+### Step 2: The Most Likely Reasons
+
+Based on what you see during your check-up, here are the main causes:
+
+#### 1. Overwatering (Most Common)
+* **What happens:** When soil stays waterlogged, roots cannot breathe. Drowned roots cannot take up food, turning the leaves yellow and stopping growth.
+* **Clue:** Soil is wet, and leaves look limp or soft.
+
+#### 2. Lack of Nutrients (Especially Nitrogen)
+* **What happens:** Tomatoes are heavy feeders. Nitrogen gives plants their green color and fuels fast growth.
+* **Clue:** The yellowing starts on the **bottom leaves** and slowly moves upward, while the whole plant looks pale and thin.
+
+#### 3. Underwatering
+* **What happens:** Without enough water, the plant cannot move nutrients from the soil into its stem and leaves.
+* **Clue:** Soil is dry, and leaf edges look dry or crispy.
+
+#### 4. Pests or Soil Diseases
+* **What happens:** Tiny pests suck the sap out of leaves, or soil fungi attack the roots (root rot), preventing food uptake.
+* **Clue:** Spots on leaves, curled leaf edges, or roots that look brown and mushy instead of healthy and white.
+
+---
+
+### Step 3: Practical Fixes to Start Today
+
+* **If the soil is soaked:** Stop watering immediately. Allow the top 2 inches of soil to dry out before giving more water. Make sure excess water can drain away easily.
+* **If the soil is bone dry:** Give the plants a deep watering in the early morning, directly at the base of the plant (keep leaves dry to avoid fungus).
+* **If watering is fine, but lower leaves are pale yellow:** The plant is hungry. Apply a nitrogen-rich feed. You can use well-rotted manure, compost tea, or a balanced tomato fertilizer (like NPK 15-15-15 or similar).
+* **Remove touching leaves:** Prune off the yellow leaves that are touching the damp ground. This stops soil-borne diseases from climbing up the plant.
+
+---
+
+**Next step for you:** 
+Tell me what you find when you check the soil and the location of the yellow leaves (top vs. bottom). If you notice any spots or bugs, let me know, and we can find the exact solution!
+
+---
+
+## STRUCTURED PROMPTING
+
+### Prompt Used
+
+You are an agricultural guidance assistant.
+
+Task: Help the user understand the tomato plant problem and identify appropriate first steps.
+
+Question: My tomato plants have yellow leaves and slow growth. What could be the reasons, and what should I do first?
+
+Instructions:
+1. Explain possible causes without claiming a definite diagnosis.
+2. Recommend simple checks the user can perform first.
+3. Give practical next steps based on the observations.
+4. Include relevant precautions.
+5. Do not recommend unnecessary chemicals or excessive fertilizer.
+
+Use the following output format:
+
+Possible Causes:
+- List the possible causes.
+
+First Steps:
+- Explain what the user should check or do first.
+
+Precautions:
+- Mention important precautions.
+
+Follow-up Questions:
+- Ask for information that would help narrow down the cause.
+
+### Actual Model Output
+
+Possible Causes:
+- **Watering imbalances:** Overwatering is the most common cause, leading to oxygen-deprived roots that cannot take up nutrients. Underwatering can also stunt growth and cause yellowing.
+- **Nutrient deficiency:** A lack of nitrogen often causes older, lower leaves to turn pale yellow and slows overall growth. Deficiencies in other nutrients (like iron, magnesium, or potassium) can also cause yellowing.
+- **Inadequate sunlight or low temperatures:** Tomatoes need full sun and warm conditions; insufficient light or cold soil can stall growth and lead to pale foliage.
+- **Poor drainage or root compaction:** Heavy clay soil or an undersized container can restrict root development and cause root suffocation.
+- **Pests or root issues:** Pests (such as aphids or spider mites) or root diseases (like root rot) can impair the plant's ability to absorb water and nutrients.
+
+First Steps:
+- **Check soil moisture:** Push your finger about 2 inches (5 cm) into the soil. If it feels soggy, hold off on watering and ensure excess water can drain freely. If it feels completely dry and hard, give the plant a thorough, deep watering.
+- **Observe the pattern of yellowing:** Note whether the yellowing starts on the bottom (older) leaves or the top (young) leaves, and whether the leaves are turning entirely yellow or keeping green veins.
+- **Inspect the foliage for pests:** Check the undersides of the leaves and along the stems for small insects, webbing, or spots.
+- **Evaluate sunlight exposure:** Confirm that the plants are receiving at least 6 to 8 hours of direct sunlight per day.
+
+Precautions:
+- **Do not immediately apply heavy fertilizer:** Adding excess fertilizer to a stressed or overwatered plant can burn the roots and worsen the problem. 
+- **Avoid chemical sprays before diagnosis:** Do not apply chemical pesticides or fungicides until you have confirmed a specific pest or disease presence.
+- **Water at the base:** Always water the soil directly rather than wetting the leaves, which helps prevent fungal leaf diseases.
+
+Follow-up Questions:
+- Are the yellow leaves primarily at the bottom of the plant, at the top, or throughout?
+- Are the plants growing in the ground, in raised beds, or in containers?
+- How frequently do you currently water them, and does the soil drain quickly?
+
+---
+
