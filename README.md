@@ -1,58 +1,73 @@
 # AgriFin AI Assistant
 
-## Live Demo
+### AI Smart Agriculture and Financial Decision Support Assistant
 
-Try the deployed application:
+AgriFin AI Assistant is an AI-powered application developed using Python, Streamlit, and Google's Gemini API. It provides general agricultural guidance and basic financial planning assistance through an interactive web interface.
+
+## Live Demo
 
 **[Launch AgriFin AI Assistant](https://agri-fin-ai-assistant-esmyrbj5w5h8exvcabxs3x.streamlit.app/)**
 
 The application is deployed using Streamlit Community Cloud.
 
-### AI Smart Agriculture and Financial Decision Support Assistant
-
-AgriFin AI Assistant is an AI-powered application developed using Python, Streamlit, and Google's Gemini API. It provides general agricultural guidance and basic financial planning assistance through an interactive web interface.
-
-The project explores how Generative AI and prompt engineering can support users in obtaining structured information for agricultural and financial decision-making.
-
----
-
 ## Project Overview
 
-AgriFin AI Assistant combines two major assistance modules:
+AgriFin AI Assistant explores the use of Generative AI to support agricultural and financial decision-making.
 
-- **Agriculture Assistance:** Provides AI-generated guidance for general agricultural questions.
-- **Financial Planning:** Offers general budgeting and financial planning guidance.
+The application provides two primary modules:
 
-The application uses Google's Gemini API to generate responses based on structured prompts and presents the information through an interactive Streamlit interface.
+- Agriculture Assistance: Provides AI-generated guidance for general agricultural questions.
+- Financial Planning: Offers basic budgeting and financial planning guidance.
 
----
+The application uses structured prompts to generate organized responses and provides an interactive interface for users.
 
 ## Key Features
 
-- **Agriculture Assistance:** AI-generated guidance for general agricultural questions.
-- **Financial Planning:** General budgeting and financial planning assistance.
-- **Gemini AI Integration:** Uses Google's Gemini API for AI-powered responses.
-- **Prompt Engineering:** Implements structured prompts to guide AI responses.
-- **Interactive Interface:** User-friendly interface developed using Streamlit.
-- **Structured Responses:** Organizes generated information into readable sections.
-- **Safety Considerations:** Includes limitations and disclaimers for agricultural and financial guidance.
-
----
+- AI-powered agricultural assistance.
+- Basic financial planning support.
+- Google Gemini API integration.
+- Structured AI-generated responses.
+- Prompt engineering and response organization.
+- Interactive Streamlit interface.
+- Agriculture and finance module separation.
+- Basic safety considerations and disclaimers.
 
 ## Technologies Used
 
 | Technology | Purpose |
 |---|---|
-| Python | Core programming language |
-| Streamlit | Interactive web application |
-| Google Gemini API | Generative AI integration |
-| Google Gen AI SDK | Communication with Gemini |
+| Python | Application development |
+| Streamlit | Web application interface |
+| Google Gemini API | AI response generation |
+| Google Gen AI SDK | Gemini integration |
 | python-dotenv | Environment variable management |
-| Prompt Engineering | Structured AI instructions |
 | Git | Version control |
 | GitHub | Source code hosting |
+| Prompt Engineering | Structured AI interactions |
 
----
+## Application Screenshots
+
+### Home Page
+
+![AgriFin Home Page](screenshots/_home.png)
+
+### Agriculture Assistance
+
+![Agriculture Module](screenshots/_agriculture1.png)
+
+![Agriculture Response](screenshots/_agriculture2.png)
+
+![Agriculture Guidance](screenshots/_agriculture3.png)
+
+### Financial Planning
+
+![Financial Planning Module](screenshots/_finance1.png)
+
+![Financial Planning Response](screenshots/_finance2.png)
+
+### Comparison Table
+
+![Comparison Table](screenshots/_comparison_table.png)
 
 ## Project Structure
 
@@ -60,10 +75,9 @@ The application uses Google's Gemini API to generate responses based on structur
 AI_Smart_Assistant/
 │
 ├── app.py
-├── check_gemini.py
 ├── requirements.txt
 ├── .gitignore
-├── README.md
+├── check_gemini.py
 ├── Final_Project_Report.md
 ├── prompt_outputs.txt
 ├── prompt_results.md
@@ -84,156 +98,94 @@ AI_Smart_Assistant/
     └── _comparison_table.png
 ```
 
----
-
-## Application Screenshots
-
-### 1. Home Page
-
-The home page provides access to the application's major assistance modules.
-
-![Home Page](screenshots/_home.png)
-
-### 2. Agriculture Assistance
-
-The agriculture module provides AI-generated guidance for general agricultural questions.
-
-![Agriculture Module](screenshots/_agriculture1.png)
-
-![Agriculture Guidance](screenshots/_agriculture2.png)
-
-![Agriculture Guidance Example](screenshots/_agriculture3.png)
-
-### 3. Financial Planning
-
-The financial planning module provides general budgeting and financial guidance.
-
-![Financial Planning](screenshots/_finance1.png)
-
-![Financial Guidance](screenshots/_finance2.png)
-
-### 4. Comparison Table
-
-![Comparison Table](screenshots/_comparison_table.png)
-
----
-
 ## Installation and Setup
-
-Follow these instructions to run AgriFin AI Assistant locally.
 
 ### Prerequisites
 
-- Python 3.10 or later, subject to project dependencies.
-- pip package manager.
-- Git.
-- Google Gemini API key.
+- Python 3.10 or later, compatible with project dependencies.
+- pip
+- Git
+- Google Gemini API key
 
-### Step 1: Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Nikhil17-techie/agri-fin-ai-assistant.git
 ```
 
-### Step 2: Navigate to the Project Directory
+### 2. Navigate to the Project
 
 ```bash
 cd agri-fin-ai-assistant
 ```
 
-### Step 3: Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-### Step 4: Configure Gemini API Key
+### 4. Configure the API Key
 
 Create a `.env` file in the project root directory.
 
-Add the following configuration:
+Add:
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-Replace the placeholder with your actual Gemini API key.
+Replace the placeholder with your actual API key.
 
-**Security Notice:** Never upload your `.env` file or expose your API key on GitHub.
+Never publish your API key or upload your `.env` file to GitHub.
 
-### Step 5: Run the Application
+### 5. Run the Application
 
 ```bash
 python -m streamlit run app.py
 ```
 
-### Step 6: Open the Application
+Open the local URL displayed in your terminal.
 
-After running the command, open the local URL displayed in your terminal.
+## Testing and Prompt Experiments
 
-Usually:
+The project includes supporting files for prompt testing and experimentation.
 
-```text
-http://localhost:8501
-```
-
----
-
-## Testing and Prompt Engineering Experiments
-
-The project includes scripts and documentation for testing prompts and exploring AI-generated responses.
-
-| File | Description |
-|---|---|
-| `check_gemini.py` | Tests Gemini API connectivity |
-| `test_prompts.py` | Contains prompt tests |
-| `prompt_tests.py` | Provides additional prompt testing |
-| `prompt_results.md` | Documents prompt testing results |
-| `prompt_outputs.txt` | Stores example outputs |
-| `experiments/` | Contains prompt engineering experiments |
-
----
+- `check_gemini.py` – Tests Gemini API connectivity.
+- `test_prompts.py` – Contains prompt tests.
+- `prompt_tests.py` – Additional prompt testing.
+- `prompt_results.md` – Documents prompt testing results.
+- `prompt_outputs.txt` – Stores example outputs.
+- `experiments/` – Contains prompt engineering experiments.
 
 ## Limitations
 
-- AI-generated responses may contain inaccurate or incomplete information.
-- Agricultural guidance depends on crop type, location, soil, weather, and other conditions.
-- Important agricultural recommendations should be verified with qualified agricultural experts.
+- AI-generated information may be inaccurate or incomplete.
+- Agricultural recommendations depend on crop type, location, soil, weather, and other conditions.
+- Important agricultural decisions should be verified with qualified experts.
 - Financial information is general guidance and is not a substitute for professional financial advice.
 - Application functionality depends on internet connectivity, API availability, and usage limits.
-
----
 
 ## Future Improvements
 
 - Support additional crops and agricultural scenarios.
 - Improve question validation and response accuracy.
 - Expand automated testing and response evaluation.
-- Add support for regional languages.
+- Add regional language support.
 - Improve user interface and accessibility.
-- Explore additional AI-powered assistance capabilities.
-
----
+- Introduce additional AI-powered decision-support capabilities.
 
 ## Author
 
-**T.Sai Nikhil**
+**Sai Nikhil**
 
 B.Tech Computer Science and Engineering  
 Artificial Intelligence and Machine Learning
 
-**GitHub Profile:**  
-https://github.com/Nikhil17-techie
+GitHub: https://github.com/Nikhil17-techie
 
-**Project Repository:**  
-https://github.com/Nikhil17-techie/agri-fin-ai-assistant
-
----
+Project Repository: https://github.com/Nikhil17-techie/agri-fin-ai-assistant
 
 ## Disclaimer
 
-This project is developed for educational and demonstration purposes.
-
-It provides general agricultural and financial information and does not replace professional agricultural consultation or financial advice.
-
-AI-generated information should be independently verified before making important decisions.
+This project is developed for educational and demonstration purposes. It provides general agricultural and financial information and does not replace professional agricultural or financial advice.
