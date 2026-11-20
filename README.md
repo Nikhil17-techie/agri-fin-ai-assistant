@@ -1,5 +1,13 @@
 # AgriFin AI Assistant
 
+## Live Demo
+
+Try the deployed application:
+
+**[Launch AgriFin AI Assistant](https://agri-fin-ai-assistant-esmyrbj5w5h8exvcabxs3x.streamlit.app/)**
+
+The application is deployed using Streamlit Community Cloud.
+
 ### AI Smart Agriculture and Financial Decision Support Assistant
 
 AgriFin AI Assistant is an AI-powered application developed using Python, Streamlit, and Google's Gemini API. It provides general agricultural guidance and basic financial planning assistance through an interactive web interface.
